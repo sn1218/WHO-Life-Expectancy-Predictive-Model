@@ -1,4 +1,5 @@
-<b>The scenario:</b>
+# WHO Life Expectancy Predictive Model
+## The Scenario
 
 Your Data Analytics team has been tasked with producing a function that takes in relevant population statistics and makes a prediction on average life expectancy. The data has been provided by the WHO and it contains records between 2000 and 2015 across 183 countries.
 
@@ -6,7 +7,7 @@ One of the main focuses of this project is data integrity. Several countries hav
 
 As such, your team has been tasked with constructing two models: One that uses the least information necessary to make a prediction, as well as a more elaborate one that can be used if states decide to share more sensitive data. Part of your task will be using your judgement as ethical data practitioners to determine which features may/should be used.
 
-<b>The project:</b>
+## The Project
 
 The tools used in this project include: Python and Python libraries (pandas, numpy, matplotlib, seaborn, sklearn, statsmodels, unittest).
 
