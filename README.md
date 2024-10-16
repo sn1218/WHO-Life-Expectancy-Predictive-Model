@@ -1,18 +1,52 @@
 # WHO Life Expectancy Predictive Model
-## The Scenario
+## Overview
 
-Your Data Analytics team has been tasked with producing a function that takes in relevant population statistics and makes a prediction on average life expectancy. The data has been provided by the WHO and it contains records between 2000 and 2015 across 183 countries.
+This project aims to build a predictive model for estimating life expectancy based on population statistics. The data provided by the World Health Organization (WHO) contains records for 183 countries from 2000 to 2015.
 
-One of the main focuses of this project is data integrity. Several countries have previously expressed concerns with sharing some of their sensitive data, such as medical records, as they brought about unwanted financial implications when correlated with their quality of life measurements and hindered social developments.
+Due to concerns over sharing sensitive data, two separate models were built:
 
-As such, your team has been tasked with constructing two models: One that uses the least information necessary to make a prediction, as well as a more elaborate one that can be used if states decide to share more sensitive data. Part of your task will be using your judgement as ethical data practitioners to determine which features may/should be used.
+* A basic model that uses the minimum amount of data necessary for prediction.
+* A more complex model that utilises additional sensitive data, providing more accurate predictions but requiring greater data sharing.
+
+This project not only focuses on model accuracy but also adheres to ethical data practices by considering which features should or shouldn't be used, based on the implications of sharing sensitive information.
+
+## Objectives
+
+The key objectives of this project are:
+
+* To predict life expectancy using population statistics.
+* To build two models:
+  * A basic model that uses only essential, non-sensitive features.
+  * A complex model that can provide more accurate predictions if sensitive data is available.
+* To maintain data integrity and ensure ethical use of sensitive information when determining which features to include in each model.
 
 ## The Project
 
 The tools used in this project include: Python and Python libraries (pandas, numpy, matplotlib, seaborn, sklearn, statsmodels, unittest).
 
-The data is first split into training and testing data, and exploratory data analysis is conducted on the training data (see EDA.ipynb). 
+### Data Preprocessing and Exploration
 
-The building of the linear regression model can be found in WHO_Lin_reg_function1.ipynb.
+The dataset was first divided into training and testing sets. Exploratory Data Analysis (EDA) was conducted on the training data to uncover key relationships and understand the factors impacting life expectancy. This si documented in 'EDA.ipynb'.
 
-Function_Lin_Reg.ipynb contains the standalone interactive function.
+### Model Building
+
+Two linear regression models were constructed (documented in 'WHO_Lin_reg_function1.ipynb'):
+
+* Basic Linear Regression Model: Uses a minimal set of features that avoids sensitive data.
+* Complex Linear Regression Model: Incorporates additional features that might be sensitive to improve prediction accuracy.
+
+Both models were trained and tested on the dataset, and the performance metrics (e.g., R-squared, RMSE) were evaluated.
+
+### Interactive Predictive Function
+
+A standalone interactive function was developed that takes in user-inputted population statistics and predicts life expectancy. Users can choose between the basic and complex models, depending on the available data. This function is designed for practical use in real-world scenarios where data availability may vary.
+
+The interactive function is available in 'Function_Lin_Reg.ipynb' and allows users to:
+
+* Input relevant population statistics (e.g., GDP, years of schooling, immunisation rates).
+* Choose between the basic or complex model for prediction.
+* Receive a predicted life expectancy based on the provided data.
+
+### Ethical Considerations
+
+Given the sensitivity of certain data (e.g., health-related metrics, mortality rates), we made deliberate decisions on which features to include in the basic model to respect privacy concerns. The more sensitive data is only used in the complex model, which should only be applied if proper permissions for sharing have been obtained.
