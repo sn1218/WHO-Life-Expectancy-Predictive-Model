@@ -79,7 +79,7 @@ The complex model, while more accurate, should only be applied when proper data-
 * **Life Expenctancy Data.csv:** The primary dataset used for the project.
 * **WHO Dataset - MetaData.ipynb:** Metadata for the dataset.
 * **EDA.ipynb:** Notebook documenting the exploratory data analysis.
-* **WHO_Lin_reg_function1.ipynb:** Notebook documenting the creation of the linear regression models, and reasoning to include or exclude some features.
+* **WHO_Lin_reg_function1.ipynb:** Notebook documenting the creation of the linear regression models and feature selection process.
 * **Function_Lin_reg.ipynb:** Notebook implementing the interactive predictive function.
 
 ## How to Use the Project
