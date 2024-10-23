@@ -76,6 +76,15 @@ Given the sensitive nature of certain data (e.g., health-related metrics, mortal
 The complex model, while more accurate, should only be applied when proper data-sharing agreements are in place, ensuring that sensitive information is handled responsibly.
 
 ## Repository Structure
-
+* Life Expenctancy Data.csv: The primary dataset used for the project.
+* WHO Dataset - MetaData.ipynb: Metadata for the dataset.
+* EDA.ipynb: Notebook documenting the exploratory data analysis.
+* WHO_Lin_reg_function1.ipynb: Notebook documenting the creation of the linear regression models.
+* Function_Lin_reg.ipynb: Notebook implementing the interactive predictive function.
 
 ## How to Use the Project
+1. Clone the repository and download the dataset and notebooks.
+2. Open the EDA.ipynb notebook to explore the dataset and view key trends in life expectancy.
+3. Use the Function_Lin_Reg.ipynb notebook to interactively predict life expectancy based on user input. Select the basic or complex model depending on the data you have available.
+* If sensitive data is available, use the complex model for better predictions.
+* If sensitive data is restricted, use the basic model for an ethical approach while maintaining reasonable accuracy.
